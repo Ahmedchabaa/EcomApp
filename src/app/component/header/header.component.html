@@ -1,0 +1,28 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex mr-2" routerLink="home">
+            <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;      
+            </i>
+            <strong style="font-size: 30px;">By Net</strong>
+            <div class="form-group">
+                <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+                <span class="fas fa-search search-icon"></span>
+            </div>
+        </div>
+    <div >
+        <button routerLink="home" class="btn btn-primary">
+            <img src="././assets/home.png" alt="home" style="width: 50px; height: 50px;"/>
+        </button> 
+        <button routerLink="products" class="btn btn-primary">
+            <img src="././assets/products.png" alt="products" style="width: 50px; height: 50px;"/>
+        </button>
+        <button routerLink="about" class="btn btn-primary">
+            <img src="././assets/about.jpg" alt="about" style="width: 50px; height: 50px;"/>
+        </button>
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+    </div>
+</header>
